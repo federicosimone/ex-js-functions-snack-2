@@ -23,9 +23,9 @@ let risultato = squared(9);
 
 console.log(risultato) ;*/
 
-//snack 3 
+//snack 3
 
-const sottrazione = (a, b) => (b - a);
+/*const sottrazione = (a, b) => (b - a);
 
 function eseguiOperazione(a, b, operazione) {
     if (b > a) {
@@ -38,5 +38,15 @@ function eseguiOperazione(a, b, operazione) {
 
 let risultato = eseguiOperazione(6, 10, sottrazione);
 
-console.log("Il risultato è ", risultato)
+console.log("Il risultato è ", risultato)*/
+
+//snack 4
+
+function creaTimer() {
+    return function () {
+
+    }
+};
+
+
 
