@@ -100,7 +100,7 @@ Definisci una funzione creaContatoreAutomatico che accetta un intervallo di temp
 /*function creaContatoreAutomatico(intervallo, durata) {
 
     let contatore = 0
-
+    console.log(contatore)
     let myInterval = setInterval(() => {
         contatore++;
         console.log(contatore);
@@ -112,7 +112,7 @@ Definisci una funzione creaContatoreAutomatico che accetta un intervallo di temp
 
 }
 
-let contatore1 = creaContatoreAutomatico(2000, 10000);*/
+let contatore1 = creaContatoreAutomatico(1000, 6000);*/
 
 
 
