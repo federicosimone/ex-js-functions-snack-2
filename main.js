@@ -120,7 +120,7 @@ let contatore1 = creaContatoreAutomatico(2000, 10000);*/
 Crea una funzione che ferma un timer dopo un certo tempo
 Scrivi una funzione eseguiEferma che accetta un messaggio, un tempo di avvio e un tempo di stop. Il messaggio deve essere stampato a intervalli regolari, ma si deve fermare dopo il tempo di stop.*/
 
-function creaContatoreAutomatico(messaggio, intervallo, durata) {
+/*function creaContatoreAutomatico(messaggio, intervallo, durata) {
 
     let contatore = 0
 
@@ -135,4 +135,30 @@ function creaContatoreAutomatico(messaggio, intervallo, durata) {
 
 }
 
-let dueSecondi = creaContatoreAutomatico("Ciao Front-end", 1000, 10000);
+let dueSecondi = creaContatoreAutomatico("Ciao Front-end", 1000, 10000);*/
+
+/* Snack 8 Bonus
+
+Crea una funzione che simula un conto alla rovescia
+Scrivi una funzione contoAllaRovescia che accetta un numero n e stampa il conto alla rovescia da n a 0, con un intervallo di 1 secondo tra ogni numero. Quando arriva a 0, stampa "Tempo scaduto!" e interrompe il timer.*/
+
+
+
+function contoAllaRovescia(partenza, intervallo) {
+
+    let contatore = partenza
+
+    let myInterval = setInterval(() => {
+        contatore--;
+        console.log(contatore);
+    }, intervallo);
+
+    setTimeout(() => {
+        clearInterval(myInterval)
+        console.log("Tempo scaduto!")
+    }, partenza * 1000);
+
+}
+
+let contoRovescia = contoAllaRovescia(10, 1000);
+contoRovescia()
