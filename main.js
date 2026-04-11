@@ -40,13 +40,47 @@ let risultato = eseguiOperazione(6, 10, sottrazione);
 
 console.log("Il risultato è ", risultato)*/
 
-//snack 4
 
-function creaTimer() {
-    return function () {
+/*Snack 4
+Crea un generatore di funzioni creaTimer
+Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".*/
 
-    }
+function tempoScaduto() {
+    console.log("Tempo scaduto");
 };
 
 
 
+function creaTimer(tempo, callback) {
+    return function () {
+        setTimeout(callback, tempo)
+    }
+};
+
+const timer1 = creaTimer(5000, tempoScaduto);
+
+timer1();
+
+
+
+/*🏆 Snack 5
+Crea una funzione stampaOgniSecondo con setInterval.
+Definisci una funzione che accetta un messaggio e lo stampa ogni secondo.
+
+Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa clearInterval() in un altro script.*/
+
+
+
+
+
+/*🏆 Snack 6
+Crea un contatore automatico con setInterval
+Definisci una funzione creaContatoreAutomatico che accetta un intervallo di tempo e restituisce una funzione che avvia un setInterval, incrementando un contatore e stampandolo.*/
+
+
+
+
+
+/*🏆 Snack 7
+Crea una funzione che ferma un timer dopo un certo tempo
+Scrivi una funzione eseguiEferma che accetta un messaggio, un tempo di avvio e un tempo di stop. Il messaggio deve essere stampato a intervalli regolari, ma si deve fermare dopo il tempo di stop.*/
