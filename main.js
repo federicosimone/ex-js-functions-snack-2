@@ -69,14 +69,13 @@ Definisci una funzione che accetta un messaggio e lo stampa ogni secondo.
 
 Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa clearInterval() in un altro script.*/
 
-
-function stampaOgniSecondo() {
+/*function stampaOgniSecondo() {
 
     let contatore = 0
 
     let myInterval = setInterval(() => {
-        contatore++;
-        console.log(contatore);
+        contatore++
+        console.log("messaggio", contatore);
     }, 1000);
 
     setTimeout(() => {
@@ -85,7 +84,8 @@ function stampaOgniSecondo() {
 
 }
 
-stampaOgniSecondo();
+stampaOgniSecondo();*/
+
 
 
 
@@ -97,7 +97,22 @@ stampaOgniSecondo();
 Crea un contatore automatico con setInterval
 Definisci una funzione creaContatoreAutomatico che accetta un intervallo di tempo e restituisce una funzione che avvia un setInterval, incrementando un contatore e stampandolo.*/
 
+function creaContatoreAutomatico(intervallo, durata) {
 
+    let contatore = 0
+
+    let myInterval = setInterval(() => {
+        contatore++;
+        console.log(contatore);
+    }, intervallo);
+
+    setTimeout(() => {
+        clearInterval(myInterval)
+    }, durata);
+
+}
+
+let dueSecondi = creaContatoreAutomatico(2000, 10000);
 
 
 
