@@ -144,7 +144,7 @@ Scrivi una funzione contoAllaRovescia che accetta un numero n e stampa il conto 
 
 
 
-function contoAllaRovescia(partenza, intervallo) {
+/*function contoAllaRovescia(partenza, intervallo) {
 
     let contatore = partenza
 
@@ -161,4 +161,4 @@ function contoAllaRovescia(partenza, intervallo) {
 }
 
 let contoRovescia = contoAllaRovescia(10, 1000);
-contoRovescia()
+contoRovescia()*/
