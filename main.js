@@ -45,7 +45,7 @@ console.log("Il risultato è ", risultato)*/
 Crea un generatore di funzioni creaTimer
 Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".*/
 
-function tempoScaduto() {
+/*function tempoScaduto() {
     console.log("Tempo scaduto");
 };
 
@@ -59,7 +59,7 @@ function creaTimer(tempo, callback) {
 
 const timer1 = creaTimer(5000, tempoScaduto);
 
-timer1();
+timer1();*/
 
 
 
@@ -68,6 +68,26 @@ Crea una funzione stampaOgniSecondo con setInterval.
 Definisci una funzione che accetta un messaggio e lo stampa ogni secondo.
 
 Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa clearInterval() in un altro script.*/
+
+
+function stampaOgniSecondo() {
+
+    let contatore = 0
+
+    let myInterval = setInterval(() => {
+        contatore++;
+        console.log(contatore);
+    }, 1000);
+
+    setTimeout(() => {
+        clearInterval(myInterval)
+    }, 5000);
+
+}
+
+stampaOgniSecondo();
+
+
 
 
 
